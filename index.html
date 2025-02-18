@@ -1,0 +1,457 @@
+<html>
+<head>
+<title>Pavan's Webpage</title>
+<link rel="stylesheet" href=".css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  
+body {
+font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.content{
+height: 20px;
+}
+  
+header {
+position: relative;
+  
+height: 800px;
+background-image: url('img14.jpg');
+background-size: cover;
+background-position: center;
+color: white;
+text-align: center;
+}
+  
+header::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); 
+}
+  
+.navbar {
+display: flex;
+
+position: relastive;
+backdrop-filter: blur(80px);
+box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+border: 2px solid rgba(255,255,255,0.18);
+justify-content: flex-end;
+   
+padding: 15px 30px;
+}
+  
+.nav-links {
+list-style: none;
+   
+display: flex;
+gap: 70px;
+align-items: center;
+margin: 0;
+}
+  
+.nav-links a {
+text-decoration: none;
+color: white;
+font-size: 16px;
+transition: color 0.3s ease;
+}
+  
+.nav-links a:hover {
+color: green;
+}
+  
+.hero-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+marquee {
+font-size: 50px;
+color: white;
+
+
+top: 80%;
+transform: translateY(-50%);
+white-space: nowrap;
+}
+  
+.hero-content h1 {
+font-size: 50px;
+margin-bottom: 20px;
+text-shadow:0px 0px 10px cyan,0px 0px 20px cyan,0px 0px 40px can,0px 0px 80px cyzn;
+
+}
+  
+.hero-content p {
+font-size: 20px;
+}
+  
+.section {
+padding: 50px 20px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+  
+.card {
+background: #ffff;
+width: 30%;
+text-align: center;
+border-radius: 10px;
+padding: 20px;
+margin: 20px;
+box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.card img {
+max-width: 100%;
+border-radius: 10px;
+}
+  
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+  
+.current-topics {
+text-align: center;
+background: white;
+padding: 50px 0;
+}
+
+.current-topics h2 {
+margin-bottom: 30px;
+size:80px;
+color: dark gray;
+}
+
+.topics {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.topic {
+width: 30%;
+
+margin: 10px;
+text-align: center;
+background:white;
+width: 28%;
+height: 350px; 
+align-items: center;
+text-align: center;
+border-radius: 10px;
+padding: 5px;
+margin: 5px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic img {
+max-width: 300px;
+border-radius: 10px;
+margin-top: 30px;
+}
+
+.topic h4 {
+margin-top: 10px;
+}
+
+.topic button {
+background-color: #333;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
+.topic:hover{
+    
+transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.topic button:hover {
+background-color: green;
+}
+.nav-links button:hover{
+background-color: green;
+}
+.nav-links button
+{   
+color: black;
+border-radius: 5px;
+background-color: black;
+}
+
+
+
+.form-section {
+padding: 50px 20px;
+background: white:
+  
+}
+
+.form-section h2 {
+margin-bottom: 20px;
+margin-top:50px ;
+color:dark gray;
+
+text-align: center;
+}
+
+.form-section p {
+margin-bottom: 30px;
+color: #666;
+text-align: center;
+margin-top: 20px;
+}
+
+.me{
+width: 400px;
+height: 400px;
+align-items: center;
+margin-right: 50px;
+margin-left: 35%;
+background-image: url('.png');
+
+background-color: rgb(138, 150, 150);
+border-radius: 20px;
+}
+
+.form-group {
+margin-bottom: 20px;
+text-align: center;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 8px;
+color: #333;
+text-align: center;
+}
+
+.form-group input, .form-group textarea {
+width: 70%;
+max-width: 500px;
+padding: 10px;
+text-align: center;
+border-radius: 20px;
+margin: auto;
+border: 1px solid white;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+.form-group textarea {
+resize: none;
+}
+
+button[type="submit"] {
+background-color:green;
+color: white;
+border: none;
+margin-left: 35%;
+padding: 10px 20px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 15px;
+transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+background-color: green;
+}
+
+
+.footer {
+background: #333;
+color: white;
+text-align: center;
+padding: 30px 20px;
+}
+
+.footer-content h3 {
+margin-bottom: 15px;
+font-size: 24px;
+}
+
+.footer-content p {
+margin-bottom: 20px;
+color: #ccc;
+}
+
+.social-icons {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 50px;
+}
+
+.social-icons li {
+display: inline-block;
+background: none;
+}
+
+.social-icons: hover
+{
+background-color: green;
+transform: rotate(15deg);
+}
+
+.social-icons a img {
+width: 30px;
+height: 30px;
+}
+
+.footer-bottom {
+margin-top: 20px;
+font-size: 14px;
+color: #aaa;
+}
+
+</style>
+</head>
+<body>
+<header >
+<div id="home" class="content">
+<nav class="navbar">
+<ul class="nav-links">
+  
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Join us</a></li>
+<li><a href="#help">help</a></li>
+</ul>
+</nav>
+</div>
+<div class="hero-content">
+      
+<marquee behavior="scroll" direction="left">
+<h1>Welcome to Our Green Life Organization</h1>
+</marquee>
+<p>We are committed to protecting and enhancing our environment.</p>
+<p>Welcome to Pavan's Webpage!</p>
+</div>
+  
+</header>
+
+<section id="about" class="section">
+<div class="card">
+<img src="img10.jpg" alt="Partners">
+<h3>PARTNERS</h3>
+<p>If you are a person who supports our ideas and wants to make your utmost contribution, we welcome you!</p>
+</div>
+<div class="card">
+<img src="img9.jpg" alt="Permits">
+<h3>PERMITS</h3>
+<p>Every person can participate in our event. We value your impact and appreciate your help.</p>
+</div>
+<div class="card">
+<img src="img12.jpg" alt="Mission">
+<h3>MISSION</h3>
+<p>We aim to expand ideas of saving the world’s ecology and welcome every little contribution!</p>
+</div>
+</section>
+<section class="current-topics">
+<h2>Current Topics</h2>
+<div class="topics">
+<div class="topic">
+<img src="img18.jpg" alt="Topic 1">
+<h1>Climate change.</h1>
+<p></p>
+<button>More</button>
+</div>
+<div class="topic">
+<img src="img17.jpg" alt="Topic 2">
+<h1>Biodiversity.</h1>
+<p></p>
+<button>More</button>
+</div>
+<div class="topic">
+<img src="img22.jpg" alt="Topic 3">
+<h1>Natural resources.</h1>
+<p></p>
+<button>More</button>
+</div>
+</div>
+</section>
+
+
+  <section id="contact" class="form-section">
+    <div class="me">
+    <h1>Join us our green life Organization</h1>
+    <p>Feel free to join us and any queries or suggestions!</p>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+              </div>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+  </section>
+  
+  
+<footer id="help" class="footer">
+<div class="footer-content">
+<h3>Pavan's Webpage</h3>
+<p>We are committed to protecting and enhancing our environment. Join us in making a difference!</p>
+<ul class="social-icons">
+
+<a href="https://www.whatsapp.com/9144612496" target="_self">
+<i class="fa-brands fa-whatsapp fa-2x"></i>
+</a>
+
+<a href="https://www.facebook.com/yourusername" target="_blank">
+<i class="fa-brands fa-facebook fa-2x"></i>
+</a>
+<a href="https://www.twitter.com/yourusername" target="_parent">
+<i class="fa-brands fa-twitter fa-2x"></i>
+</a>
+<a href="https://www.instagram.com/pavan_mane_4" target="_top">
+<i class="fa-brands fa-instagram fa-2x"></i>
+</a>
+<a href="https://www.snapchat.com/pavanyevle1" target="myframe">
+<i class="fa-brands fa-snapchat fa-2x"></i>
+</a>
+
+<a href="https://https://www.linkedin.com/in/pavan-yevle-66a9a2303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+<i class="fa-brands fa-linkedin fa-2x"></i>
+</a>
+
+<a href="https://www.telegram.com/9144612496" target="_blank">
+<i class="fa-brands fa-telegram fa-2x"></i>
+</ul>
+</a>
+
+</div>
+<div class="footer-bottom">
+<p>&copy; 2025 Pavan's Webpage. All rights reserved.</p>
+</div>
+</footer>
+  
+</body>
+</html>
